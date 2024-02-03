@@ -22,18 +22,17 @@ collegeData.initialize()
       .catch((error) => {
         console.error(error);
       });
-
-    collegeData.getTAs()
-      .then((tas) => {
-        console.log(`Successfully retrieved ${tas.length} TAs`);
+      collegeData.getCourses()
+      .then((courses) => {
+        console.log(`Successfully retrieved ${courses.length} courses`);
       })
       .catch((error) => {
         console.error(error);
       });
 
-    collegeData.getCourses()
-      .then((courses) => {
-        console.log(`Successfully retrieved ${courses.length} courses`);
+    collegeData.getTAs()
+      .then((tas) => {
+        console.log(`Successfully retrieved ${tas.length} TAs`);
       })
       .catch((error) => {
         console.error(error);
